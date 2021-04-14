@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Philosopher|Ubuntu:500&display=swap"
+            rel="stylesheet"
+        />
+        <link href="fullcalendar/core/main.css" rel="stylesheet" />
+        <link href="fullcalendar/daygrid/main.css" rel="stylesheet" />
+
+        <script src="fullcalendar/core/main.js"></script>
+        <script src="fullcalendar/daygrid/main.js"></script>
+    </head>
+
+    <body>
+              <header id="header">
+
+             <img src="assets/hamburger.svg" onclick="menuClick()" class="hamburger"></img>
+            <nav>
+
+                <ul>
+                    <li>
+                        <div class="line" id="active">
+                            <a href="index.html">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line">
+                            <a href="html/media.html">Media</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line">
+                            <a href="html/launches.html">Launches</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="overlay"></div>
+            <section class="landing">
+                <div class="bg"></div>
+                <h1>The international space station</h1>
+            </section>
+
+            <div class="content-wrapper">
+                <section class="section-wrapper">
+                    <div class="text-content">
+                        <h2>About</h2>
+                        <p>
+                            The International Space Station (ISS) is a space
+                            station (habitable artificial satellite) in low
+                            Earth orbit.
+                        </p>
+                        <p>
+                            The ISS programme is a joint project between five
+                            participating space agencies: NASA (United States),
+                            Roscosmos (Russia), JAXA (Japan), ESA (Europe), and
+                            CSA (Canada).[6][7] The ownership and use of the
+                            space station is established by intergovernmental
+                            treaties and agreements.[8]
+                        </p>
+                        <a><button>Read more</button></a>
+                    </div>
+                    <div class="media" id="Model3d">
+                        <iframe
+                            title="A 3D model"
+                            src="https://sketchfab.com/models/fa43d4cad3484c11aac66e3a6382facb/embed?autospin=0.2&amp;autostart=1"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; vr"
+                            mozallowfullscreen="true"
+                            webkitallowfullscreen="true"
+                        ></iframe>
+                    </div>
+                </section>
+                <section class="section-wrapper">
+                    <div class="text-content" id="updates"></div>
+                    <div class="media" id="imgFeed">
+                        <img src="assets/research.jpg" alt="" srcset="" />
+                    </div>
+                </section>
+
+                <section class="section-wrapper">
+                    <div class="text-content">
+                        <h2>Research</h2>
+                        <p>
+                            The International Space Station (ISS) is a space
+                            station (habitable artificial satellite) in low
+                            Earth orbit.
+                        </p>
+                        <p>
+                            The ISS programme is a joint project between five
+                            participating space agencies: NASA (United States),
+                            Roscosmos (Russia), JAXA (Japan), ESA (Europe), and
+                            CSA (Canada).[6][7] The ownership and use of the
+                            space station is established by intergovernmental
+                            treaties and agreements.[8]
+                        </p>
+                        <a><button>Read more</button></a>
+                    </div>
+                    <div class="media">
+                        <img src="assets/research.jpg" alt="" srcset="" />
+                    </div>
+                </section>
+                <section class="section-wrapper">
+                    <div class="text-content">
+                        <h2>Location and crew</h2>
+                        <div id="crew"></div>
+                        <a><button>Read more</button></a>
+                    </div>
+                    <div class="media" id="map"></div>
+                </section>
+                <section class="section-wrapper">
+                    <div class="text-content">
+                        <h2>Launches</h2>
+                        <p>
+                            The International Space Station (ISS) is a space
+                            station (habitable artificial satellite) in low
+                            Earth orbit.
+                        </p>
+                        <p>
+                            The ISS programme is a joint project between five
+                            participating space agencies: NASA (United States),
+                            Roscosmos (Russia), JAXA (Japan), ESA (Europe), and
+                            CSA (Canada).[6][7] The ownership and use of the
+                            space station is established by intergovernmental
+                            treaties and agreements.[8]
+                        </p>
+                        <a href="html/launches.html"><button>Read more</button></a>
+                    </div>
+                    <div class="media" id="calendar"></div>
+                </section>
+                <section class="section-wrapper">
+                    <div class="text-content">
+                        <h2>Nasa video gallery</h2>
+                        <p>
+                            The International Space Station (ISS) is a space
+                            station (habitable artificial satellite) in low
+                            Earth orbit.
+                        </p>
+                        <p>
+                            The ISS programme is a joint project between five
+                            participating space agencies: NASA (United States),
+                            Roscosmos (Russia), JAXA (Japan), ESA (Europe), and
+                            CSA (Canada).[6][7] The ownership and use of the
+                            space station is established by intergovernmental
+                            treaties and agreements.[8]
+                        </p>
+                        <a href="html/media.html"><button>Read more</button></a>
+                    </div>
+                    <div class="media">
+                        <img src="assets/stem.jpg" alt="" srcset="" />
+                    </div>
+                </section>
+            </div>
+
+
+        </main>
+
+        <footer></footer>
+    </body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/update.js"></script>
+    <script src="scripts/location.js"></script>
+</html>

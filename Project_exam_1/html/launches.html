@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="../fullcalendar/core/main.css" rel="stylesheet" />
+        <link href="../fullcalendar/daygrid/main.css" rel="stylesheet" />
+        <script src="../fullcalendar/core/main.js"></script>
+        <script src="../fullcalendar/daygrid/main.js"></script>
+        <title>Launches</title>
+    </head>
+    <body>
+            <header id="header">
+
+        <img src="../assets/hamburger.svg" onclick="menuClick()" class="hamburger"></img>
+         <nav>
+
+                <ul>
+
+                    <li>
+                        <div class="line">
+                            <a href="../index.html">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line">
+                            <a href="media.html">Media</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line" id="active">
+                            <a href="launches.html">Launches</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="launchWrap">
+            <section class="launchCalendar" id="calendar"></section>
+            <section class="launchGroup"></section>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="../scripts/launch.js"></script>
+    <script src="../scripts/script.js"></script>
+</html>

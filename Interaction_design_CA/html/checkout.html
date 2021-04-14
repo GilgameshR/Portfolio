@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<ul id="menuWrap">
+				<img src="../assets/hamburger.svg" id="menuBtn" onclick="hamburger()">
+
+				<div id="menuLinks">
+					<li class="menuItem"><a href="../index.html">Home</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Casual"'>Casual</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Formal"'>Formal</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Boots"'>Boots</a></li>
+				</div>
+
+				<div id="personal">
+					<li>
+						<a href="#"><img src="../assets/Asset2.svg" alt="My page"></a>
+					</li>
+					<li>
+						<a onclick="cartWindow()" id="cartWrap"><img src="../assets/Asset1.svg" alt="Cart">
+							<p id=counter></p>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+
+		<div id="cartWindow">
+		</div>
+
+	</header>
+	<main>
+		<div class="formTitle">
+			<h1>Checkout</h1>
+		</div>
+		<form onsubmit="return false;" class="checkoutForm">
+
+			<div>
+				<div class="checkoutProd"></div>
+
+				<fieldset class="shippingCont">
+					<legend>Shipping</legend>
+					<span class="error" id="shippingError">Please select a shipping option</span></br>
+					<input type="radio" name="shipping" id="fedex" value="fedex" onChange="shippingCost()">
+					<label for="fedex">FedEx<span id="price">$10</span></label>
+					</br>
+					<input type="radio" name="shipping" id="ems" value="ems" onChange="shippingCost()">
+					<label for="ems">EMS<span id="price">$15</span></label>
+					</br>
+					<input type="radio" name="shipping" id="ups" value="ups" onChange="shippingCost()">
+					<label for="ups">UPS<span id="price">$20</span></label>
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+					<p>First name:</p> <span class="error" id="firstNameError">This field cannot be blank</span>
+					<input type="text" id="firstName">
+					<p>Last name:</p> <span class="error" id="lastNameError">This field cannot be blank</span>
+					<input type="text" id="lastName">
+					<p>Email:</p><span class="error" id="emailError">This field cannot be blank</span>
+					<input type="text" id="email">
+					<p>Address:</p><span class="error" id="addressError">This field cannot be blank</span>
+					<input type="text" id="address">
+					<p>Address 2 (optional):</p> <input type="text">
+				</fieldset>
+
+				<fieldset class="customerLocation">
+
+					<span class="error" id="locationError">Please make sure all the fields are filled in</span>
+
+					<div>
+
+						<div>
+							<p>Country</p>
+							<select name="" id="country">
+								<option value="" disabled selected hidden>Country</option>
+								<option value="denmark">Denmark</option>
+								<option value="finland">Finland</option>
+								<option value="iceland">Iceland</option>
+								<option value="norway">Norway</option>
+								<option value="sweden">Sweden</option>
+							</select>
+						</div>
+
+						<div>
+							<p>State:</p>
+							<input type="text" id="state">
+						</div>
+
+						<div>
+							<p>Zip code:</p>
+							<input type="text" id="zip">
+						</div>
+
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<input type="checkbox" name="" id="sameAddress"><label for="sameAddress">Shipping information is the same as
+					billing address</label> </br>
+					<input type="checkbox" name="" id="saveInfo"><label for="saveInfo">Save this information for next time</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Payment method</legend>
+					<span class="error" id="paymentError">Please select a payment method</span></br>
+					<input type="radio" name="payment" id="credit" value="credit card">
+					<label for="credit">Credit card</label></br>
+					<input type="radio" name="payment" id="debit" value="debit card">
+					<label for="debit">Debit card</label>
+				</fieldset>
+
+				<fieldset>
+					<p>Name on card:</p>
+					<span class="error" id="cardNameError">This field cannot be blank</span>
+					<input type="text" name="cardholder" id="cardName">
+
+					<p>Card number:</p>
+					<span class="error" id="cardNoError">This field cannot be blank</span>
+					<input type="text" name="cardNo" id="cardNumber">
+
+					<p>CVC:</p>
+					<span class="error" id="cvcError">This field cannot be blank</span>
+					<input type="text" name="" id="cvc">
+
+					<p>Expiration date:</p>
+					<span class="error" id="cardDateError">Please make sure all fields are filled in correctly</span>
+					<div class="dateGroup">
+						<select name="day" id="cardDay">
+							<option value="" disabled selected hidden>Day</option>
+						</select>
+
+						<select name="month" id="cardMonth">
+							<option value="" disabled selected hidden>Month</option>
+						</select>
+
+						<input type="text" name="expiration" placeholder="Year" id="cardYear">
+					</div>
+				</fieldset>
+
+				<input type="submit" value="Complete purchase" onclick="complete()">
+
+			</div>
+
+		</form>
+
+
+	</main>
+	<footer></footer>
+	<script src="../js/cart.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<ul id="menuWrap">
+				<img src="../assets/hamburger.svg" id="menuBtn" onclick="hamburger()">
+
+				<div id="menuLinks">
+					<li class="menuItem"><a href="../index.html">Home</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Casual"'>Casual</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Formal"'>Formal</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Boots"'>Boots</a></li>
+				</div>
+
+				<div id="personal">
+					<li>
+						<a href="#"><img src="../assets/Asset2.svg" alt="My page"></a>
+					</li>
+					<li>
+						<a onclick="cartWindow()" id="cartWrap"><img src="../assets/Asset1.svg" alt="Cart">
+							<p id=counter></p>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+
+		<div id="cartWindow">
+		</div>
+
+	</header>
+	<main>
+		<div id="banner"></div>
+		<div id="category">
+			<nav id="navbar" onchange="filterUpdate()">
+				<div class="filterControl">
+					<button onclick="filterDropdown()">Show filters</button>
+				</div>
+				<div class="filterDropdown">
+					<h2 onclick="specificFilter('sort')">Sort</h2>
+
+					<select name="Sort by" id="sort" class="sort">
+						<option value="&sort=_id&dir=1" disabled selected hidden>Sort by</option>
+						<option value="&sort=price&dir=-1">Price (highest first)</option>
+						<option value="&sort=price&dir=1">Price (lowest first)</option>
+						<option value="&sort=totalRating&dir=-1">Reviews</option>
+						<option value="&sort=avgRating&dir=-1">Rating</option>
+					</select>
+
+					<ul class="sort">
+						<li>
+							<input type="radio" name="sort" id="highest" value="&sort=price&dir=-1">
+							<label for="highest">Price (highest first)</label>
+						</li>
+						<li>
+							<input type="radio" name="sort" id="lowest" value="&sort=price&dir=1">
+							<label for="lowest">Price (lowest first)</label>
+						</li>
+						<li>
+							<input type="radio" name="sort" id="reviews" value="&sort=totalRating&dir=-1">
+							<label for="reviews">Reviews</label>
+						</li>
+						<li>
+							<input type="radio" name="sort" id="rating" value="&sort=avgRating&dir=-1">
+							<label for="rating">Rating</label>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="filterDropdown">
+					<h2 onclick="specificFilter('styleDrop')">Style</h2>
+					<ul class="styleDrop">
+						<li><label><input type="checkbox" class="filter" value='{"category": "Casual"}' id="">Casual</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"category": "Formal"}' id="">Formal</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"category": "Boots"}' id="">Boots</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Wingtip"}' id="">Wingtip</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Oxford"}' id="">Oxford</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Plain Toe"}' id="">Plain toe</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Bike Toe"}' id="">Bike toe</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Dress"}' id="">Dress</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Monk Strap"}' id="">Monk strap</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Slip On"}' id="">Slip on</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Moc Toe"}' id="">Moc toe</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Derby"}' id="">Derby</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Loafer"}' id="">Loafer</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Cap Toe"}' id="">Cap toe</label></li>
+						<li><label><input type="checkbox" class="filter" value='{"style": "Lace Up"}' id="">Lace up</label></li>
+					</ul>
+				</div>
+
+				<div class="filterDropdown">
+					<h2 onclick="specificFilter('sizeDrop')">Size</h2>
+					<div class="sizeDrop">
+						<button class="filter" onclick="sizeFormat('eu')">eu </button>
+						<button class="filter" onclick="sizeFormat('uk')">uk</button>
+						<button class="filter" onclick="sizeFormat('us')">us</button>
+						<div id="thing">
+							<ul id="size">
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 38}'>38</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 39}'>39</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 40}'>40</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 41}'>41</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 42}'>42</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 43}'>43</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 44}'>44</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 45}'>45</label></li>
+								<li><label><input type="checkbox" class="filter" value='{"EUsize": 46}'>46</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filterDropdown">
+					<h2 onclick="specificFilter('colourDrop')">Colour</h2>
+					<ul class="colourDrop">
+						<li><label><input type="checkbox" class="filter" name="1" value='{"colour": "Black"}'>Black</label></li>
+						<li><label><input type="checkbox" class="filter" name="1" value='{"colour": "Brown"}'>Brown</label></li>
+						<li><label><input type="checkbox" class="filter" name="1" value='{"colour": "white"}'>White</label></li>
+					</ul>
+				</div>
+			</nav>
+
+			<section id="products"></section>
+		</div>
+	</main>
+	<footer></footer>
+
+	<script src="../js/category.js"></script>
+	<script src="../js/cart.js"></script>
+	<script src="../js/script.js"></script>
+
+</body>
+
+</html>

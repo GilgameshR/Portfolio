@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<ul id="menuWrap">
+				<img src="../assets/hamburger.svg" id="menuBtn" onclick="hamburger()">
+
+				<div id="menuLinks">
+					<li class="menuItem"><a href="../index.html">Home</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Casual"'>Casual</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Formal"'>Formal</a></li>
+					<li class="menuItem"><a href='category.html?id="category": "Boots"'>Boots</a></li>
+				</div>
+
+				<div id="personal">
+					<li>
+						<a href="#"><img src="../assets/Asset2.svg" alt="My page"></a>
+					</li>
+					<li>
+						<a onclick="cartWindow()" id="cartWrap"><img src="../assets/Asset1.svg" alt="Cart">
+							<p id=counter></p>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+
+		<div id="cartWindow">
+		</div>
+
+	</header>
+	<main>
+		<section id="uniqueProducts"></section>
+
+	</main>
+	<footer></footer>
+	<script src="../js/specific.js"></script>
+	<script src="../js/cart.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+
+</html>

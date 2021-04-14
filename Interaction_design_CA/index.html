@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="bg">
+	<header id="header">
+		<nav>
+			<ul id="menuWrap">
+				<img src="assets/hamburger.svg" id="menuBtn" onclick="hamburger()">
+
+				<div id="menuLinks">
+					<li class="menuItem"><a href="index.html">Home</a></li>
+					<li class="menuItem"><a href='html/category.html?id="category": "Casual"'>Casual</a></li>
+					<li class="menuItem"><a href='html/category.html?id="category": "Formal"'>Formal</a></li>
+					<li class="menuItem"><a href='html/category.html?id="category": "Boots"'>Boots</a></li>
+				</div>
+
+				<div id="personal">
+					<li>
+						<a href="#"><img src="assets/Asset2.svg" alt="My page"></a>
+					</li>
+					<li>
+						<a onclick="cartWindow()" id="cartWrap"><img src="assets/Asset1.svg" alt="Cart">
+							<p id=counter></p>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+
+		<div id="cartWindow">
+		</div>
+
+	</header>
+	<main id="home">
+
+		<figure id="logo">
+			<img src="assets/Letha_logo_3.svg" alt="Letha logo">
+			<h1>Quality shoes for any occasion</h1>
+		</figure>
+
+
+		<section id="tiles">
+			<div id="item1">
+				<a href='html/category.html?id="category": "Casual"'>
+					<p>Casual</p>
+					<img src="assets/casual.jpg" alt="Casual shoes">
+				</a>
+			</div>
+			<div id="item2">
+				<a href='html/category.html?id="category": "Formal"'>
+					<p>Formal</p>
+					<img src="assets/formal.jpg" alt="Formal shoes">
+				</a>
+			</div>
+			<div id="item3">
+				<a href='html/category.html?id="category": "Boots"'>
+					<p>Boots</p>
+					<img src="assets/boots.jpg" alt="Boots">
+				</a>
+			</div>
+
+		</section>
+
+		<section id="arrivals"></section>
+
+	</main>
+	<footer></footer>
+
+	<script src="js/script.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+
+</html>
