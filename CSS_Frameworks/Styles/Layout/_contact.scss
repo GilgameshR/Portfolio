@@ -1,0 +1,34 @@
+/*.contactWrap {
+    padding: 120px 0px;
+    margin: auto;
+    width: 95%;
+}*/
+
+.contactGroup {
+    /*width: 35%;*/
+    /*margin: 0 auto;*/
+    &__txtInput {
+        margin: 10px 0px;
+        height: 50px;
+    }
+    &__txtArea {
+        height: 120px;
+    }
+}
+
+.serviceGroup {
+    /*   width: 32%;
+    margin: 0 auto;*/
+
+    .card {
+        margin: 0;
+    }
+    .card-body {
+        padding: 15px;
+        margin: auto;
+    }
+
+    .border {
+        border-color: rgba($color: #000000, $alpha: 0.2) !important;
+    }
+}

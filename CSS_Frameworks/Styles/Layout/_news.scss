@@ -1,0 +1,19 @@
+.newsWrap {
+    padding: 120px 0px;
+    margin: auto;
+    width: 80%;
+    a:hover {
+        color: #fff;
+    }
+}
+
+.card {
+    padding: 0;
+
+    &-title {
+        margin: 5% !important;
+    }
+    &-text {
+        margin: auto 5% !important;
+    }
+}

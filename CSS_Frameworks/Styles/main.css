@@ -1,0 +1,223 @@
+.carousel {
+  padding: 0;
+}
+
+.carousel-item {
+  max-height: 550px;
+}
+
+main {
+  margin-top: 59px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.homeWrap {
+  margin-bottom: 210px;
+}
+
+.introWrap {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.cardWrap .active {
+  background-color: #d9d9d9 !important;
+  border: none;
+}
+
+.cardWrap .card-header {
+  padding-top: 0 !important;
+}
+
+.card__text-block {
+  padding: 20px 0;
+}
+
+@media (max-width: 991px) {
+  .container {
+    margin: auto 5%;
+  }
+  .cardWrap .card {
+    border: none !important;
+  }
+  .cardWrap .card-header {
+    display: none !important;
+  }
+  .cardWrap .media {
+    display: block !important;
+  }
+  .cardWrap .card__image {
+    display: none !important;
+    margin: 0 !important;
+  }
+  .cardWrap .tab__head-small {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    color: #da1d85;
+    margin-top: 8%;
+  }
+  .cardWrap .active {
+    background-color: #fff !important;
+  }
+}
+
+.__general_font {
+  font-family: 'Lato', sans-serif;
+}
+
+.__heading_font {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+}
+
+.__logo_font {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.__logo_font-size {
+  font-size: 22px;
+}
+
+.__logo_font-colour {
+  color: #da1d85 !important;
+}
+
+.__heading {
+  margin-bottom: 25px;
+}
+
+.__heading_margin-btm {
+  margin-bottom: 80px;
+}
+
+.__heading_margin-top {
+  margin-top: 60px;
+}
+
+.__heading_font-size {
+  font-size: 24px;
+}
+
+.__sub-h_font-size {
+  font-size: 20px;
+}
+
+.menu_font-size {
+  font-size: 13px;
+}
+
+.__btn_font-size {
+  font-size: 13px;
+}
+
+.footer_font-size {
+  font-size: 11px;
+}
+
+.__general_font-size {
+  font-size: 16px;
+}
+
+footer i {
+  font-size: 25px !important;
+}
+
+.newsWrap {
+  padding: 120px 0px;
+  margin: auto;
+  width: 80%;
+}
+
+.newsWrap a:hover {
+  color: #fff;
+}
+
+.card {
+  padding: 0;
+}
+
+.card-title {
+  margin: 5% !important;
+}
+
+.card-text {
+  margin: auto 5% !important;
+}
+
+/*.contactWrap {
+    padding: 120px 0px;
+    margin: auto;
+    width: 95%;
+}*/
+.contactGroup {
+  /*width: 35%;*/
+  /*margin: 0 auto;*/
+}
+
+.contactGroup__txtInput {
+  margin: 10px 0px;
+  height: 50px;
+}
+
+.contactGroup__txtArea {
+  height: 120px;
+}
+
+.serviceGroup {
+  /*   width: 32%;
+    margin: 0 auto;*/
+}
+
+.serviceGroup .card {
+  margin: 0;
+}
+
+.serviceGroup .card-body {
+  padding: 15px;
+  margin: auto;
+}
+
+.serviceGroup .border {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.contactWrap__sendBtn {
+  display: block;
+  margin: 110px auto;
+  width: 250px;
+  padding: 12px 0px;
+}
+
+.serviceGroup .btn {
+  padding: 15px;
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.serviceGroup .btn:hover {
+  background-color: #dbdbdb !important;
+}
+
+.__moreBtn {
+  width: 50%;
+  padding: 8px 0px;
+  margin-bottom: 7%;
+  margin-left: 11%;
+}
+
+.btn {
+  background-color: #da1d85 !important;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #a41664 !important;
+}
+/*# sourceMappingURL=main.css.map */

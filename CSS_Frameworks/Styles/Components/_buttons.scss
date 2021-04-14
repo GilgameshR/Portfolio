@@ -1,0 +1,33 @@
+.contactWrap__sendBtn {
+    display: block;
+    margin: 110px auto;
+    width: 250px;
+    padding: 12px 0px;
+}
+.serviceGroup {
+    .btn {
+        padding: 15px;
+        background-color: #fff !important;
+        color: black !important;
+    }
+    .btn:hover {
+        background-color: darken(#fff, 14) !important;
+    }
+}
+
+.__moreBtn {
+    width: 50%;
+    padding: 8px 0px;
+    margin-bottom: 7%;
+    margin-left: 11%;
+}
+
+.btn {
+    background-color: $yayPink !important;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: darken($yayPink, 12) !important;
+}
